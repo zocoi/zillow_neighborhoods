@@ -1,9 +1,17 @@
 # zillow_neighborhoods
 
+### Convert shapefile to geojson
 Use `ogr2ogr` to convert shapefile to geojson
 
 ```
 for f in *.shp; do ogr2ogr -f "geojson" ${f:r}.geojson $f done
+```
+
+### Merge all geojson into one big file
+
+```
+npm install --save @mapbox/geojson-merge
+geojson-merge *.geojson > combined.geojson
 ```
 
 ### Credit: Zillow
