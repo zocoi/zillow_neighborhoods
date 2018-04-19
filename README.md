@@ -1,4 +1,4 @@
-# zillow_neighborhoods
+# zillow_neighborhoods (Updated Apr 2018 from Zillow)
 
 ### Convert shapefile to geojson
 Use `ogr2ogr` to convert shapefile to geojson
